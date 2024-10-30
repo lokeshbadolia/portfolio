@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 23; /*250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 265; /*250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode first color --> Hex	#f9660b*/
     --first-color: hsl(var(--hue-color), 95%, 51%);   
@@ -56,6 +56,9 @@
     --z-modal: 1000;
 }
 
+.circular_image img{
+  width:100%;
+}
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
     :root {
@@ -769,8 +772,8 @@ img {
 /* Papers Grid */
 .papers__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
   justify-content: center;
 }
 
@@ -840,7 +843,7 @@ img {
 
 .project__bg{
   background-color: var(--first-color-second);
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .project__title{
@@ -1387,9 +1390,13 @@ img {
   }
 
   .paper__img{
-    width: 320px;
+    width: 100%;
+    max-width: 1000px;
   }
 
+  .project__txt {
+  }
+  
   .paper__content{
     align-items: center;
   }
